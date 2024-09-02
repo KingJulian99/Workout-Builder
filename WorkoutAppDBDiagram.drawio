@@ -1,0 +1,52 @@
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:129.0) Gecko/20100101 Firefox/129.0" version="24.7.7">
+  <diagram name="Page-1" id="bytVkmMXI3wlz6iZTl_p">
+    <mxGraphModel dx="1050" dy="566" grid="0" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="xRN2EtfFZ9Sup4Dd4KNo-1" value="User" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="52" width="160" height="179" as="geometry" />
+        </mxCell>
+        <mxCell id="xRN2EtfFZ9Sup4Dd4KNo-2" value="&lt;div&gt;UserID : Integer (PK)&lt;br&gt;&lt;/div&gt;&lt;div&gt;UserName : String&lt;/div&gt;&lt;div&gt;LastName : String&lt;/div&gt;&lt;div&gt;FirstName : String&lt;/div&gt;&lt;div&gt;Email : String&lt;/div&gt;&lt;div&gt;Password : String&lt;br&gt;&lt;/div&gt;&lt;div&gt;IsLocked : Boolean&lt;/div&gt;&lt;div&gt;NumRetries : Integer&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="xRN2EtfFZ9Sup4Dd4KNo-1">
+          <mxGeometry y="50" width="160" height="129" as="geometry" />
+        </mxCell>
+        <mxCell id="xRN2EtfFZ9Sup4Dd4KNo-3" value="Exercise" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="282" y="52" width="178" height="125" as="geometry" />
+        </mxCell>
+        <mxCell id="xRN2EtfFZ9Sup4Dd4KNo-4" value="&lt;div&gt;ExerciseID : Integer (PK)&lt;/div&gt;&lt;div&gt;&lt;div&gt;ExerciseGroupID : Integer (FK)&lt;/div&gt;&lt;/div&gt;&lt;div&gt;ExerciseName : String&lt;/div&gt;&lt;div&gt;ExerciseDescription : String&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="xRN2EtfFZ9Sup4Dd4KNo-3">
+          <mxGeometry y="50" width="178" height="75" as="geometry" />
+        </mxCell>
+        <mxCell id="xRN2EtfFZ9Sup4Dd4KNo-9" value="Exercise Group" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="282" y="339" width="192" height="111" as="geometry" />
+        </mxCell>
+        <mxCell id="xRN2EtfFZ9Sup4Dd4KNo-10" value="&lt;div&gt;ExerciseGroupID : Integer (PK)&lt;/div&gt;&lt;div&gt;ExerciseGroupName : String&lt;/div&gt;&lt;div&gt;ExericseGroupDescription : String&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="xRN2EtfFZ9Sup4Dd4KNo-9">
+          <mxGeometry y="50" width="192" height="61" as="geometry" />
+        </mxCell>
+        <mxCell id="xRN2EtfFZ9Sup4Dd4KNo-12" value="Workout " style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="100" y="280" width="165" height="108" as="geometry" />
+        </mxCell>
+        <mxCell id="xRN2EtfFZ9Sup4Dd4KNo-13" value="&lt;div&gt;WorkoutID : Integer (PK)&lt;/div&gt;&lt;div&gt;CreatedBy : Integer (FK)&lt;br&gt;&lt;/div&gt;&lt;div&gt;DateCreated : DateTime&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="xRN2EtfFZ9Sup4Dd4KNo-12">
+          <mxGeometry y="50" width="165" height="58" as="geometry" />
+        </mxCell>
+        <mxCell id="xRN2EtfFZ9Sup4Dd4KNo-14" value="Workout Exercise" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="485" y="52" width="183" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="xRN2EtfFZ9Sup4Dd4KNo-15" value="&lt;div&gt;WorkoutExerciseID : Integer (PK)&lt;/div&gt;&lt;div&gt;ExerciseID : Integer (FK)&lt;br&gt;&lt;/div&gt;&lt;div&gt;ExerciseFlowID : Integer (FK)&lt;/div&gt;&lt;div&gt;ExericseNumber : Integer&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="xRN2EtfFZ9Sup4Dd4KNo-14">
+          <mxGeometry y="50" width="183" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="xRN2EtfFZ9Sup4Dd4KNo-22" value="Workout Completed" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="283" y="187" width="206" height="141" as="geometry" />
+        </mxCell>
+        <mxCell id="xRN2EtfFZ9Sup4Dd4KNo-23" value="&lt;div&gt;WorkoutCompletedID : Integer (PK)&lt;/div&gt;&lt;div&gt;WorkoutID : Integer (FK)&lt;br&gt;&lt;/div&gt;&lt;div&gt;UserID : Integer (FK)&lt;/div&gt;&lt;div&gt;TimeStarted : DateTime&lt;/div&gt;&lt;div&gt;TimeCompleted : DateTime&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="xRN2EtfFZ9Sup4Dd4KNo-22">
+          <mxGeometry y="50" width="206" height="91" as="geometry" />
+        </mxCell>
+        <mxCell id="xRN2EtfFZ9Sup4Dd4KNo-24" value="Exercise Flow" style="swimlane;childLayout=stackLayout;horizontal=1;startSize=50;horizontalStack=0;rounded=1;fontSize=14;fontStyle=0;strokeWidth=2;resizeParent=0;resizeLast=1;shadow=0;dashed=0;align=center;arcSize=4;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="505" y="221" width="207" height="163" as="geometry" />
+        </mxCell>
+        <mxCell id="xRN2EtfFZ9Sup4Dd4KNo-25" value="&lt;div&gt;ExerciseFlowID : Integer (PK)&lt;/div&gt;&lt;div&gt;WorkoutID : Integer (FK)&lt;br&gt;&lt;/div&gt;&lt;div&gt;CreatedBy : Integer (FK)&lt;br&gt;&lt;/div&gt;&lt;div&gt;UserID : Integer (FK)&lt;/div&gt;&lt;div&gt;ExerciseFlowType : Integer&lt;br&gt;&lt;/div&gt;&lt;div&gt;&lt;div&gt;NumberInFlow : Integer&lt;br&gt;&lt;/div&gt;&lt;/div&gt;&lt;div&gt;DateCreated : DateTime&lt;/div&gt;&lt;div&gt;&lt;br&gt;&lt;/div&gt;" style="align=left;strokeColor=none;fillColor=none;spacingLeft=4;fontSize=12;verticalAlign=top;resizable=0;rotatable=0;part=1;html=1;" vertex="1" parent="xRN2EtfFZ9Sup4Dd4KNo-24">
+          <mxGeometry y="50" width="207" height="113" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
