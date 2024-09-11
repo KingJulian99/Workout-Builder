@@ -1,18 +1,23 @@
 import Button from "./components/shared/Button";
+import Dropdown from "./components/shared/Dropdown";
+
+import { useTheme } from './context/ThemeContext';
 
 function App() {
+  const { theme, toggleTheme } = useTheme();
+
   const handleClick = () => {
-    alert('Button clicked!');
+    toggleTheme();
   };
 
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <Button onClick={handleClick}></Button>
-      </header>
+    <div className="App h-screen w-full bg-white dark:bg-stone-900 transition-all duration-500">
+      
+      <div>
+        <Button onClick={handleClick} size="medium"></Button>
+        <Dropdown items={[{text: "test", callback: () => {alert('test')}}]}></Dropdown>
+      </div>
+      
     </div>
   );
 }
