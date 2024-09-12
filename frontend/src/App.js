@@ -1,7 +1,6 @@
+import { useTheme } from './context/ThemeContext';
 import Button from "./components/shared/Button";
 import Dropdown from "./components/shared/Dropdown";
-
-import { useTheme } from './context/ThemeContext';
 
 function App() {
   const { theme, toggleTheme } = useTheme();

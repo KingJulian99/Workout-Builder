@@ -637,6 +637,10 @@ video {
   border-radius: 0.75rem;
 }
 
+.rounded-sm {
+  border-radius: 0.125rem;
+}
+
 .border {
   border-width: 1px;
 }
@@ -876,6 +880,11 @@ video {
 .dark\:bg-slate-300:is(.dark *) {
   --tw-bg-opacity: 1;
   background-color: rgb(203 213 225 / var(--tw-bg-opacity));
+}
+
+.dark\:text-sm:is(.dark *) {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
 }
 
 .dark\:shadow-gray-400:is(.dark *) {
