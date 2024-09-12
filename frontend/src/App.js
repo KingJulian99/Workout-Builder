@@ -10,12 +10,24 @@ function App() {
     toggleTheme();
   };
 
+  const items = [
+    {text: "test", callback: () => {alert('test')}},
+    {text: "test", callback: () => {alert('test')}},
+    {text: "test", callback: () => {alert('test')}},
+    {text: "test", callback: () => {alert('test')}},
+    {text: "test", callback: () => {alert('test')}},
+    {text: "test", callback: () => {alert('test')}},
+    {text: "test", callback: () => {alert('test')}},
+    {text: "test", callback: () => {alert('test')}},
+    {text: "test", callback: () => {alert('test')}}
+  ]
+
   return (
     <div className="App h-screen w-full bg-white dark:bg-stone-900 transition-all duration-500">
       
       <div>
         <Button onClick={handleClick} size="medium"></Button>
-        <Dropdown items={[{text: "test", callback: () => {alert('test')}}]}></Dropdown>
+        <Dropdown items={items}></Dropdown>
       </div>
       
     </div>
