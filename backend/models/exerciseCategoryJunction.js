@@ -2,28 +2,30 @@ const Sequelize = require("sequelize");
 const sequelize = require("../../util/database.js");
 
 const ExerciseCategoryJunction = sequelize.define("exerciseCategoryJunction", {
-    exerciseCategoryJunctionId: {
-        type: Sequelize.INTEGER,
-        autoIncrement: true,
-        allowNull: false,
-        primaryKey: true,
-    },
-    exericseId: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-    },
-    category: {
-        type: Sequelize.STRING,
-        allowNull: false,
-    },
-    created: {
-        type: Sequelize.DATE,
-        allowNull: false,
-    },
-    lastUpdated: {
-        type: Sequelize.DATE,
-        allowNull: false,
-    }
+  id: {
+    type: DataTypes.INTEGER,
+    autoIncrement: true,
+    allowNull: false,
+    primaryKey: true,
+  },
+  exerciseId: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+  categoryId: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+  created: {
+    defaultValue: Sequelize.NOW,
+    type: DataTypes.DATE,
+    allowNull: false,
+  },
+  lastUpdated: {
+    defaultValue: Sequelize.NOW,
+    type: DataTypes.DATE,
+    allowNull: false,
+  },
 });
 
 module.exports = ExerciseCategoryJunction;

@@ -1,34 +1,35 @@
 const Sequelize = require("sequelize");
 const sequelize = require("../../util/database.js");
 
-const ExerciseInstance = sequelize.define("exerciseInstance", {
+const WorkoutInstance = sequelize.define("workoutIntance", {
   id: {
     type: DataTypes.INTEGER,
     autoIncrement: true,
     allowNull: false,
     primaryKey: true,
   },
-  exericseId: {
+  workoutId: {
     type: DataTypes.INTEGER,
-    references: {
-      model: "Exercise",
-      key: "id",
-    },
-    allowNull: false,
-  },
-  workoutStepId: {
-    type: DataTypes.INTEGER,
-    references: {
-      model: "workoutStep",
-      key: "id",
-    },
-    allowNull: false,
-  },
-  duration: {
-    type: DataTypes.FLOAT,
     allowNull: true,
   },
-  reps: {
+  currentWorkoutStep: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+  },
+  currentSetCount: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+  },
+  owner: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+  },
+  timeStarted: {
+    defaultValue: Sequelize.NOW,
+    type: DataTypes.DATE,
+    allowNull: true,
+  },
+  timeCompleted: {
     type: DataTypes.INTEGER,
     allowNull: true,
   },
@@ -44,4 +45,4 @@ const ExerciseInstance = sequelize.define("exerciseInstance", {
   },
 });
 
-module.exports = ExerciseInstance;
+module.exports = WorkoutInstance;

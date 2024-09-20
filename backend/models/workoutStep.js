@@ -2,48 +2,50 @@ const Sequelize = require("sequelize");
 const sequelize = require("../../util/database.js");
 
 const WorkoutStep = sequelize.define("workoutStep", {
-    workoutStepId: {
-        type: Sequelize.INTEGER,
-        autoIncrement: true,
-        allowNull: false,
-        primaryKey: true,
-    },
-    workoutId: {
-        type: Sequelize.INTEGER,
-        allowNull: false,
-    },
-    type: {
-        type: Sequelize.STRING,
-        allowNull: false,
-    },
-    condition: {
-        type: Sequelize.STRING,
-        allowNull: true,
-    },
-    stepNumber: {
-        type: Sequelize.INTEGER,
-        allowNull: true,
-    },
-    nextStepOne: {
-        type: Sequelize.INTEGER,
-        allowNull: true,
-    },
-    nextStepTwo: {
-        type: Sequelize.INTEGER,
-        allowNull: true,
-    },
-    exerciserInstanceId: {
-        type: Sequelize.INTEGER,
-        allowNull: true,
-    },
-    created: {
-        type: Sequelize.DATE,
-        allowNull: false,
-    },
-    lastUpdated: {
-        type: Sequelize.DATE,
-        allowNull: false,
-    }
+  id: {
+    type: DataTypes.INTEGER,
+    autoIncrement: true,
+    allowNull: false,
+    primaryKey: true,
+  },
+  workoutId: {
+    type: DataTypes.INTEGER,
+    allowNull: false,
+  },
+  type: {
+    type: DataTypes.STRING,
+    allowNull: false,
+  },
+  condition: {
+    type: DataTypes.STRING,
+    allowNull: true,
+  },
+  stepNumber: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+  },
+  nextStepOne: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+  },
+  nextStepTwo: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+  },
+  exerciseInstanceId: {
+    type: DataTypes.INTEGER,
+    allowNull: true,
+  },
+  created: {
+    defaultValue: Sequelize.NOW,
+    type: DataTypes.DATE,
+    allowNull: false,
+  },
+  lastUpdated: {
+    defaultValue: Sequelize.NOW,
+    type: DataTypes.DATE,
+    allowNull: false,
+  },
 });
 
 module.exports = WorkoutStep;
